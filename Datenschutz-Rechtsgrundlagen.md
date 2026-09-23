@@ -15,6 +15,12 @@ Alle App-Anfragen durchlaufen einen Cloudflare Worker, der die IP-Adresse vor Er
 - KVKK (Türkei): IP-Anonymisierung reduziert Registrierungspflichten erheblich
 - COPPA (USA): App für alle Altersgruppen geeignet (Wetterinfo) — keine Datenerhebung → COPPA automatisch erfüllt
 
+**Rechtliche Einordnung der Anonymisierung selbst:**
+
+IP-Adressen sind nach CJEU Breyer (C-582/14) personenbezogene Daten. Art. 4(2) DSGVO qualifiziert auch das transiente Empfangen und Löschen als „Verarbeitung" — Erhebung und Vernichtung sind dort ausdrücklich aufgeführt. Die Aussage „WeatherOnline verarbeitet keine personenbezogenen Daten" wäre daher rechtlich ungenau: Cloudflare verarbeitet als Auftragsverarbeiter (Art. 28 DSGVO) die vollständige IP für den Bruchteil einer Sekunde, der zur Anonymisierung technisch notwendig ist.
+
+Korrekte Formulierung: WeatherOnline *speichert und nutzt* keine personenbezogenen Daten. Die transiente Verarbeitung durch Cloudflare dient ausschließlich der Anonymisierung und erfolgt auf Grundlage des berechtigten Interesses (Art. 6 Abs. 1 lit. f DSGVO).
+
 ---
 
 ## Anwendbare Datenschutzgesetze
@@ -109,7 +115,8 @@ Alle App-Anfragen durchlaufen einen Cloudflare Worker, der die IP-Adresse vor Er
 |---|---|---|
 | Wetterdaten-API (Koordinaten, Ort-ID) | Art. 6 Abs. 1 lit. b — Vertragserfüllung | 4 |
 | Apple MapKit (Kartendarstellung) | Art. 6 Abs. 1 lit. f — berechtigtes Interesse | 6 |
-| Server-Logs (anonymisiert) | Kein Personenbezug → DSGVO nicht anwendbar | 5 |
+| IP-Anonymisierung (Cloudflare als AVV, transient) | Art. 6 Abs. 1 lit. f — berechtigtes Interesse (datenschutzfreundliche Infrastruktur) | 5 |
+| Server-Logs (nach Anonymisierung gespeichert) | Kein Personenbezug → DSGVO nicht anwendbar | 5 |
 
 ---
 
@@ -119,7 +126,7 @@ Alle App-Anfragen durchlaufen einen Cloudflare Worker, der die IP-Adresse vor Er
 |---|---|---|
 | Apple MapKit | USA | EU-Standardvertragsklauseln (Art. 46 Abs. 2 lit. c DSGVO) |
 | OpenStreetMap / OSMF (nur Android) | UK | Angemessenheitsbeschluss (Art. 45 DSGVO) |
-| Cloudflare Worker | USA (Edge) | Nur anonymisierte Daten; kein Personenbezug |
+| Cloudflare (IP-Anonymisierung, AVV) | USA (Edge) | Art. 28 DSGVO (AVV); Standardvertragsklauseln (Art. 46 Abs. 2 lit. c); vollständige IP nur transient für Anonymisierungsvorgang |
 
 ---
 

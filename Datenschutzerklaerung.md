@@ -56,7 +56,7 @@ Die Logdateien enthalten daher ausschließlich anonyme Verbindungsdaten: anonymi
 
 Die Logdateien werden für mehrere Jahre gespeichert und dienen ausschließlich der Qualitätskontrolle und Fehleranalyse.
 
-**WeatherOnline verarbeitet im Rahmen der App-Nutzung keine personenbezogenen Daten.**
+Cloudflare Inc. verarbeitet als Auftragsverarbeiter (Art. 28 DSGVO) die vollständige IP-Adresse für den technisch notwendigen Moment der Anonymisierung. Die WeatherOnline-Server empfangen und speichern ausschließlich die anonymisierten Daten. Rechtsgrundlage für diese transiente Verarbeitung ist das berechtigte Interesse (Art. 6 Abs. 1 lit. f DSGVO) an einer datenschutzfreundlichen Infrastruktur. Cloudflare Inc. ist in den USA ansässig; die Übermittlung erfolgt auf Grundlage der EU-Standardvertragsklauseln (Art. 46 Abs. 2 lit. c DSGVO).
 
 ---
 
@@ -90,6 +90,8 @@ Die nachfolgenden Rechte stehen Ihnen je nach Wohnsitzland nach dem jeweils anwe
 
 **EU/EWR — DSGVO:**
 Auskunft (Art. 15), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung (Art. 18), Datenübertragbarkeit (Art. 20), Widerspruch gegen berechtigte Interessen (Art. 21).
+
+Da die einzige Verarbeitung personenbezogener Daten (IP-Adresse durch Cloudflare) transient und auf den Anonymisierungsvorgang beschränkt ist, sind die Rechte auf Auskunft, Berichtigung, Löschung und Datenübertragbarkeit faktisch nicht ausübbar — die Daten existieren zum Zeitpunkt eines Ersuchens nicht mehr. Das Widerspruchsrecht nach Art. 21 gilt formal, läuft jedoch ins Leere: die Verarbeitung ist technisch zwingend für die Anonymisierung und dient damit dem Schutz der Nutzer selbst.
 
 **Vereinigtes Königreich — UK GDPR:**
 Dieselben Rechte wie unter der DSGVO gelten entsprechend nach UK GDPR.

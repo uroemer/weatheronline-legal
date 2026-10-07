@@ -11,11 +11,7 @@
   - Keine externen Ressourcen außer dem WeatherOnline-Logo (eigener Server images-weatheronline.com).
   - Formular sendet an kuendigung.php im selben Verzeichnis.
   Platzhalter vor Inbetriebnahme ersetzen:
-    [URL-AGB]                  → Pfad zu den AGB
-    [URL-DATENSCHUTZ]          → Pfad zur Datenschutzerklärung
-    [URL-NUTZUNGSBEDINGUNGEN]  → Pfad zu den Nutzungsbedingungen
-    [URL-IMPRESSUM]            → Pfad zum Impressum
-    [JS-COOKIES]               → JavaScript-Aufruf des Cookie-Management-Dialogs
+    Alle URLs auf weatheronline.de/about/ zeigend, Stand 07.10.2026.
 -->
 <style>
   :root {
@@ -225,18 +221,18 @@
 
   <div class="info" role="note" aria-label="Was nach der Kündigung geschieht">
     <p><strong>Was nach der Kündigung geschieht:</strong> Ihr Zugang bleibt bis zum Vertragsende bestehen. Ein PayPal-Abonnement wird zum selben Zeitpunkt beendet; danach erfolgen keine weiteren Abbuchungen. Mitgliedschaften mit Zahlung über Mollie/iDEAL enden ohnehin mit Ablauf der bezahlten Laufzeit.</p>
-    <p>Sie können auch per E-Mail an <a href="mailto:member@weatheronline.co.uk">member@weatheronline.co.uk</a> oder per Brief kündigen. Einzelheiten zu Laufzeit und Kündigung enthalten die <a href="[URL-AGB]">AGB</a>.</p>
-    <p>Die Angaben werden nur zur Bearbeitung der Kündigung verwendet; siehe <a href="[URL-DATENSCHUTZ]">Datenschutzerklärung</a>.</p>
+    <p>Sie können auch per E-Mail an <a href="mailto:member@weatheronline.co.uk">member@weatheronline.co.uk</a> oder per Brief kündigen. Einzelheiten zu Laufzeit und Kündigung enthalten die <a href="/about/agb">AGB</a>.</p>
+    <p>Die Angaben werden nur zur Bearbeitung der Kündigung verwendet; siehe <a href="/about/datenschutz">Datenschutzerklärung</a>.</p>
   </div>
 </main>
 
 <footer>
   <nav aria-label="Rechtliche Links">
     <ul class="footer-links">
-      <li><a href="[URL-NUTZUNGSBEDINGUNGEN]">Nutzungsbedingungen</a></li>
-      <li><a href="[URL-DATENSCHUTZ]">Datenschutz</a></li>
-      <li><a href="[URL-IMPRESSUM]">Impressum</a></li>
-      <li><a href="#" onclick="[JS-COOKIES]; return false;">Cookies verwalten</a></li>
+      <li><a href="/about/nutzungsbedingungen">Nutzungsbedingungen</a></li>
+      <li><a href="/about/datenschutz">Datenschutz</a></li>
+      <li><a href="/about/impressum">Impressum</a></li>
+      <li><a href="/about/cookies">Cookies verwalten</a></li>
       <li class="hervor"><a href="/vertrag-widerrufen">Vertrag widerrufen</a></li>
       <li class="hervor"><a href="/vertraege-kuendigen">Verträge hier kündigen</a></li>
     </ul>

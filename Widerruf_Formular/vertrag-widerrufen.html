@@ -11,11 +11,7 @@
   - Keine externen Ressourcen außer dem WeatherOnline-Logo (eigener Server images-weatheronline.com).
   - Formular sendet an widerruf.php im selben Verzeichnis.
   Platzhalter vor Inbetriebnahme ersetzen:
-    [URL-WIDERRUFSBELEHRUNG]   → Pfad zur Widerrufsbelehrung
-    [URL-DATENSCHUTZ]          → Pfad zur Datenschutzerklärung
-    [URL-NUTZUNGSBEDINGUNGEN]  → Pfad zu den Nutzungsbedingungen
-    [URL-IMPRESSUM]            → Pfad zum Impressum
-    [JS-COOKIES]               → JavaScript-Aufruf des Cookie-Management-Dialogs
+    Alle URLs auf weatheronline.de/about/ zeigend, Stand 07.10.2026.
 -->
 <style>
   :root {
@@ -185,18 +181,18 @@
 
   <div class="info" role="note" aria-label="Was nach dem Widerruf geschieht">
     <p><strong>Was nach dem Widerruf geschieht:</strong> Besteht das Widerrufsrecht, erstatten wir Ihre Zahlung innerhalb von 14 Tagen über das ursprünglich verwendete Zahlungsmittel. Ein laufendes PayPal-Abonnement wird beendet und der Zugang gesperrt.</p>
-    <p>Einzelheiten enthält die <a href="[URL-WIDERRUFSBELEHRUNG]">Widerrufsbelehrung</a>. Sie können den Widerruf auch per E-Mail an <a href="mailto:member@weatheronline.co.uk">member@weatheronline.co.uk</a> oder per Brief erklären.</p>
-    <p>Die Angaben werden nur zur Bearbeitung des Widerrufs verwendet; siehe <a href="[URL-DATENSCHUTZ]">Datenschutzerklärung</a>.</p>
+    <p>Einzelheiten enthält die <a href="/about/widerrufsbelehrung">Widerrufsbelehrung</a>. Sie können den Widerruf auch per E-Mail an <a href="mailto:member@weatheronline.co.uk">member@weatheronline.co.uk</a> oder per Brief erklären.</p>
+    <p>Die Angaben werden nur zur Bearbeitung des Widerrufs verwendet; siehe <a href="/about/datenschutz">Datenschutzerklärung</a>.</p>
   </div>
 </main>
 
 <footer>
   <nav aria-label="Rechtliche Links">
     <ul class="footer-links">
-      <li><a href="[URL-NUTZUNGSBEDINGUNGEN]">Nutzungsbedingungen</a></li>
-      <li><a href="[URL-DATENSCHUTZ]">Datenschutz</a></li>
-      <li><a href="[URL-IMPRESSUM]">Impressum</a></li>
-      <li><a href="#" onclick="[JS-COOKIES]; return false;">Cookies verwalten</a></li>
+      <li><a href="/about/nutzungsbedingungen">Nutzungsbedingungen</a></li>
+      <li><a href="/about/datenschutz">Datenschutz</a></li>
+      <li><a href="/about/impressum">Impressum</a></li>
+      <li><a href="/about/cookies">Cookies verwalten</a></li>
       <li class="hervor"><a href="/vertrag-widerrufen">Vertrag widerrufen</a></li>
       <li class="hervor"><a href="/vertraege-kuendigen">Verträge hier kündigen</a></li>
     </ul>
